@@ -1,5 +1,4 @@
 # Byte-compiled / optimized / DLL files
-bugs.txt
 __pycache__/
 *.py[cod]
 *$py.class
