@@ -7,9 +7,9 @@ from discord.ext.commands import Context
 
 class Fun(Plugin):
 
-    @commands.command(name="emoji", description="sends a random emoji")
-    async def _(self, ctx: Context) -> None:
-        emojis: list[str] = ["sob", "grinning", "skull", "eagle", "goat", "sunglasses"]
+    @commands.command(name="emoji", description="Sends a random emoji")
+    async def send_random_emoji(self, ctx: Context) -> None:
+        emojis: list[str] = [":sob:", ":grinning:", ":skull:", ":eagle:", ":goat:", ":sunglasses:"]
         emoji: str = choice(emojis)
         await ctx.reply(emoji)
 
